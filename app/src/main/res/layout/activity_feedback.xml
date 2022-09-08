@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#0FEDF4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".feedback">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bb"
+        android:paddingTop="30dp"
+        android:text="Feedback"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/et_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/txt_back"
+        android:hint="Driver Name"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColorHint="@color/black" />
+
+    <RatingBar
+        android:id="@+id/et_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:progressBackgroundTint="#02FAF1" />
+
+    <EditText
+        android:id="@+id/edmulti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/txt_back"
+        android:hint="Enter Your Feedback"
+        android:padding="12dp"
+        android:lines="6" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Your Feedback"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="150dp"/>
+</LinearLayout>
